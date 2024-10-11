@@ -1,4 +1,16 @@
 ```bash
+git clone https://github.com/marcus-rk/microservice_2.git
+cd microservices_project
+```
+```bash
+cd inventory_service
+docker build -t inventory_service .
+```
+```bash
+cd ../product_service
+docker build -t product_service .
+```
+```bash
 docker network create microservice-network
 ```
 ```bash
