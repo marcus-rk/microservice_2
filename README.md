@@ -11,6 +11,9 @@ cd ../product_service
 docker build -t product_service .
 ```
 ```bash
+docker build -t currency-service https://github.com/Emythiel/ita23-3semester.git#main:micro-services/currency-service
+```
+```bash
 docker network create microservice-network
 ```
 ```bash
