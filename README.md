@@ -1,10 +1,11 @@
 # Microservices Project
 
 This project demonstrates a microservices-based architecture using Flask and Docker. It consists of three microservices and an API Gateway: 
-- **Inventory Service**: Manages product inventory.
-- **Product Service**: Provides product details and communicates with the currency service.
+
+- **Inventory Service**: Manages product inventory and provides stock information.
+- **Product Service**: Provides product details and communicates with the Currency Service for price conversions.
 - **Currency Service**: Converts prices between different currencies using real-time exchange rates.
-- **API Gateway**: Acts as a single entry point for clients, routing requests to the appropriate microservices and aggregating responses.
+- **API Gateway**: Acts as a single entry point for clients, routing requests to the appropriate microservices and return responses.
 
 The services are containerized using Docker and communicate with each other over a custom Docker network.
 
