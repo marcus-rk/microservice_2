@@ -85,6 +85,9 @@ docker run -d \
   --name api_gateway \
   --network microservice-network \
   -p 5004:5004 \
+  -e CURRENCY_SERVICE_URL=http://currency_service:5003 \
+  -e PRODUCT_SERVICE_URL=http://product_service:5002 \
+  -e INVENTORY_SERVICE_URL=http://inventory_service:5001 \
   api_gateway
 ```
 
