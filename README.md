@@ -4,6 +4,7 @@ This project demonstrates a microservices-based architecture using Flask and Doc
 - **Inventory Service**: Manages product inventory.
 - **Product Service**: Provides product details and communicates with the currency service.
 - **Currency Service**: Converts prices between different currencies using real-time exchange rates.
+- **API Gateway**: Acts as a single entry point for clients, routing requests to the appropriate microservices and aggregating responses.
 
 The services are containerized using Docker and communicate with each other over a custom Docker network.
 
