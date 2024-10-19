@@ -27,4 +27,5 @@ def get_currency(price, currency):
         'currency': converted_price
         })
 
-app.run(host="0.0.0.0")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5003)
