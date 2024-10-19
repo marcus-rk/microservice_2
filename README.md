@@ -132,11 +132,11 @@ GET http://localhost:5003/currency/EUR/100
 
 ---
 ## Testing the Microservices with Postman
-Once the services are running, you can use **Postman** or **curl** to interact with the APIs.
+Once the services are running, you can use **Postman** or **curl** to interact with the api gateway.
 ### Example Test Flow
 1. Currency Conversion: Test the currency_service by converting USD to another currency (e.g., EUR).
 ```bash
-GET http://localhost:5003/currency/EUR/100
+GET http://localhost:5004/currency/EUR/100
 ```
 Expected response:
 ```json
@@ -146,9 +146,9 @@ Expected response:
 ```
 2. Product Service: The product_service interacts with the currency_service to return product details with price conversions.
 ```bash
-GET http://localhost:5002/product/121
+GET http://localhost:5004/product/121
 ```
 3. Inventory Service: The inventory_service interacts with the product_service to retrieve product details, including stock availability.
 ```bash
-GET http://localhost:5001/inventory/121
+GET http://localhost:5004/inventory/121
 ```
