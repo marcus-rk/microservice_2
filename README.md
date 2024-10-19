@@ -38,6 +38,10 @@ docker build -t product_service .
 # Build inventory_service
 cd ../inventory_service
 docker build -t inventory_service .
+
+# Build api_gateway
+cd ../api_gateway
+docker build -t api_gateway .
 ```
 
 ### 3. Create a Docker Network
@@ -71,6 +75,13 @@ docker run -d \
   --name inventory_service \
   --network microservice-network \
   inventory_service
+
+# Run api_gateway
+docker run -d \
+  --name api_gateway \
+  --network microservice-network \
+  -p 5004:5004 \
+  api_gateway
 ```
 
 ### 5. Verify Running Containers
