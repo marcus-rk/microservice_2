@@ -49,6 +49,10 @@ The services will communicate over a custom Docker network called microservice-n
 ```bash
 docker network create microservice-network
 ```
+You can check your networks using this command in the terminal:
+```bash
+docker network ls
+```
 
 ### 4. Run the Docker Containers
 Run each service in a Docker container and connect them to the microservice-network.
